@@ -1,0 +1,73 @@
+country_iso_code,currency_iso_code,currency_name
+AR,ARS,Argentinian Peso
+AU,AUD,Australian dollar 
+AT,EUR,Euro
+BE,EUR,Euro
+BR,BRL,Brazilian Real 
+CA,CAD,Canadian Dollar 
+CL,CLP,Chilean Peso
+CO,COP,Colombian Peso
+CZ,CZK,Czechian Koruna
+DK,DKK,Danish Krone
+FR,EUR,Euro
+DE,EUR,Euro
+HK,HKD,Hong Kong Dollar 
+IN,INR,Indian Rupee
+ID,IDR,Indonesian Rupiah
+IE,EUR,Euro
+IT,EUR,Euro
+JP,JPY,Japanese Yen
+MY,MYR,Malaysia Ringgit 
+MX,MXN,Mexican Peso 
+NL,EUR,Euro
+NZ,NZD,New Zealand Dollar 
+NO,NOK,Norwegian Krone
+PH,PHP,Philippine Peso
+PL,PLN,Poland Złoty
+PT,EUR,Euro
+RU,RUB,Russian Ruble
+SG,SGD,Singapore dollar
+ZA,ZAR,South African Rand
+ES,EUR,Euro
+SE,SEK,Swedish Krona
+CH,CHF,Swiss Franc
+TW,TWD,New Taiwan Dollar
+TR,TRY,Turkish Lira
+AE,AED,United Arab Emirates Dirham 
+GB,GBP,British Pound
+US,USD,US Dollar
+RO,RON,Romanian Leu
+BH,BHD,Bahraini Dinar
+BY,BYN,Belarusian Ruble
+EC,USD,US Dollar
+EG,EGP,Egyptian Pound
+ET,ETB,Ethiopian Birr
+FI,EUR,Euro
+GE,GEL,Georgian Lari
+GH,GHS,Ghanaian Cedi
+GR,EUR,Euro
+HU,HUF,Hungarian Forint
+IL,ILS,Israeli New Shekel
+JO,JOD,Jordanian Dinar
+KZ,KZT,Kazakhstani Tenge
+KE,KES,Kenyan Shilling
+KW,KWD,Kuwaiti Dinar
+LB,LBP,Lebanese Pound
+MU,MUR,Mauritian Rupee
+NG,NGN,Nigerian Naira
+OM,OMR,Omani Rial
+PY,PYG,Paraguayan Guarani
+PE,PEN,Peruvian Sol
+RU,RUB,Russian Ruble
+SA,SAR,Saudi Riyal
+SK,EUR,Euro
+KR,KRW,South Korean Won
+TZ,TZS,Tanzanian Shilling
+TH,THB,Thai Baht
+UG,UGX,Ugandan Shilling
+UA,UAH,Ukrainian Hryvnia
+UY,UYU,Uruguayan Peso
+UZ,UZS,Uzbekistani Som
+VN,VND,Vietnamese Dong
+ZM,ZMW,Zambian Kwacha
+ZW,USD,US Dollar

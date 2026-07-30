@@ -1,0 +1,66 @@
+/*
+ * CSS Styles
+*/
+#submit_gs_connect_btn112 
+{
+    display: none;
+}
+.gs_profile_form_custom_fields_block {
+    display:none;
+}
+#kb_gs_profiles_form {
+    display:none;
+}
+.kb-profile-form-error {
+    display:none;
+}
+#cancel_cat {
+    display: none; 
+    margin: 5px;
+}
+
+.error_field {
+    border: 1px solid red !important;
+}
+
+.error_message {
+    font-family: Arial;
+    font-size: 12px;
+    color: red;
+}
+
+.etsy_attribute_mapping table {
+    background-color: #F5F5F5;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+.etsy_attribute_mapping table tr td {
+    padding: 10px;
+}
+
+.etsy_attribute_mapping table tr td:first-child {
+    text-align: right;
+}
+/*Start-MK made changes on 23-11-2017 to update the display of icons*/
+.icon-check-ok:before {
+    content: "\f00c";
+}
+
+.process-icon-ban:before {
+    content:"\f05e";
+}
+/*End- MK made changes on 23-11-2017 to update the display of icons*/
+.sync_shipping_templates_loader, .sync_countries_regions_loader, .sync_products_listing_loader, .sync_variations_listing_loader, .sync_orders_listing_loader, .sync_orders_status_loader, .sync_translations_loader, .sync_inventory_loader{
+    background-image: url("../img/loader.gif");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: none;
+    float: right;
+}
+
+.fancybox-inner {
+    height: auto !important;
+}
