@@ -16,7 +16,6 @@ Key features of the PrestaShop Google Shopping Module include:
 - **Attribute Management** — Organise attributes like Colour, Size, Gender, and Pattern into groups for cleaner listings.
 - **Cron Job Support** — Automatically update and sync your feed with Google on a schedule.
 
-> **Note:** All of the features above are included in the [Paid Google Shopping Module for PrestaShop by Knowband](https://www.knowband.com/prestashop-google-shopping). The free module includes only the basic, fundamental listing of your store's catalogue on Google Merchant Centre.
 
 ## Demo
 
