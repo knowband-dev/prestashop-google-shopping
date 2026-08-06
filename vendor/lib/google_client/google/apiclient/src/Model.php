@@ -253,11 +253,21 @@ class Model implements \ArrayAccess
     }
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for ArrayAccess::offsetExists() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function offsetExists($offset)
   {
     return isset($this->$offset) || isset($this->modelData[$offset]);
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for ArrayAccess::offsetGet() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function offsetGet($offset)
   {
     return isset($this->$offset) ?
@@ -265,6 +275,11 @@ class Model implements \ArrayAccess
         $this->__get($offset);
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for ArrayAccess::offsetSet() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function offsetSet($offset, $value)
   {
     if (property_exists($this, $offset)) {
@@ -275,6 +290,11 @@ class Model implements \ArrayAccess
     }
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for ArrayAccess::offsetUnset() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function offsetUnset($offset)
   {
     unset($this->modelData[$offset]);

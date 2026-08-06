@@ -42,7 +42,7 @@
         {
             $this->name = 'kbgoogleshopping';
             $this->tab = 'market_place';
-            $this->version = '3.0.0';
+            $this->version = '3.0.1';
             $this->author = 'Knowband';
             $this->need_instance = 0;
             $this->module_key = '6c094f174a7eaf17421dca4a4f9c5233';

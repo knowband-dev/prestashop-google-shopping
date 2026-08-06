@@ -251,7 +251,11 @@ class GSSingleAction extends GSBase
     }
 
     //function to upload single product on google shopping
-    public function createSingleProduct($product_obj, $id_product_attribute = 0, $attributes_groups = array(), $combination_images = array(), $listing)
+    /*
+    * PHP 8: optional params before required $listing treated as required; give $listing a default
+    * 01-08-2026
+    */
+    public function createSingleProduct($product_obj, $id_product_attribute = 0, $attributes_groups = array(), $combination_images = array(), $listing = null)
     {
 		/*
 		* Replaced Tools::jsonDecode by json_decode

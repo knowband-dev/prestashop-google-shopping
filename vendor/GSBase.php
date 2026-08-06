@@ -146,7 +146,11 @@ class GSBase
     }
     
     //function defination to generate google offer id
-    protected function generateGoogleOfferId($id_product_attribute = 0, $id_lang)
+    /*
+    * PHP 8: optional $id_product_attribute before required $id_lang; give $id_lang a default
+    * 01-08-2026
+    */
+    protected function generateGoogleOfferId($id_product_attribute = 0, $id_lang = null)
     {
         $offer_id = '';
         if ((int)$id_product_attribute > 0) {

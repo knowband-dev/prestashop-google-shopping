@@ -11,6 +11,11 @@ class Collection extends Model implements \Iterator, \Countable
 {
   protected $collection_key = 'items';
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for Iterator/Countable compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function rewind()
   {
     if (isset($this->{$this->collection_key})
@@ -19,6 +24,11 @@ class Collection extends Model implements \Iterator, \Countable
     }
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for Iterator::current() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function current()
   {
     $this->coerceType($this->key());
@@ -27,6 +37,11 @@ class Collection extends Model implements \Iterator, \Countable
     }
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for Iterator::key() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function key()
   {
     if (isset($this->{$this->collection_key})
@@ -35,17 +50,32 @@ class Collection extends Model implements \Iterator, \Countable
     }
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for Iterator::next() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function next()
   {
     return next($this->{$this->collection_key});
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for Iterator::valid() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function valid()
   {
     $key = $this->key();
     return $key !== null && $key !== false;
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for Countable::count() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function count()
   {
     if (!isset($this->{$this->collection_key})) {
@@ -54,6 +84,11 @@ class Collection extends Model implements \Iterator, \Countable
     return count($this->{$this->collection_key});
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for ArrayAccess::offsetExists() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function offsetExists($offset)
   {
     if (!is_numeric($offset)) {
@@ -62,6 +97,11 @@ class Collection extends Model implements \Iterator, \Countable
     return isset($this->{$this->collection_key}[$offset]);
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for ArrayAccess::offsetGet() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function offsetGet($offset)
   {
     if (!is_numeric($offset)) {
@@ -71,6 +111,11 @@ class Collection extends Model implements \Iterator, \Countable
     return $this->{$this->collection_key}[$offset];
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for ArrayAccess::offsetSet() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function offsetSet($offset, $value)
   {
     if (!is_numeric($offset)) {
@@ -79,6 +124,11 @@ class Collection extends Model implements \Iterator, \Countable
     $this->{$this->collection_key}[$offset] = $value;
   }
 
+  /*
+  * PHP 8: add ReturnTypeWillChange for ArrayAccess::offsetUnset() compatibility
+  * 01-08-2026
+  */
+  #[\ReturnTypeWillChange]
   public function offsetUnset($offset)
   {
     if (!is_numeric($offset)) {

@@ -30,7 +30,17 @@
 {/if}
 
 <script>
-   velovalidation.setErrorLanguage({
+/*
+* Defer velovalidation.setErrorLanguage until velovalidation.js is loaded (footer)
+* 01-08-2026
+*/
+(function () {
+    function kbGsInitVelovalidation() {
+        if (typeof velovalidation === 'undefined') {
+            setTimeout(kbGsInitVelovalidation, 50);
+            return;
+        }
+        velovalidation.setErrorLanguage({
             alphanumeric: "{l s='Field should be alphanumeric.' mod='kbgoogleshopping'}",
         digit_pass: "{l s='Password should contain atleast 1 digit.' mod='kbgoogleshopping'}",
         empty_field: "{l s='Field cannot be empty.' mod='kbgoogleshopping'}",
@@ -55,6 +65,13 @@
             html_tags: "{l s='Field should not contain HTML tags.' mod='kbgoogleshopping'}",
             number_pos: "{l s='You can enter only positive numbers.' mod='kbgoogleshopping'}",
         });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', kbGsInitVelovalidation);
+    } else {
+        kbGsInitVelovalidation();
+    }
+})();
     var lang_err = "{l s='You can not select default language in sync languages.' mod='kbgoogleshopping'}";
     var amount_err = "{l s='Please enter valid amount (e.g. 3.50).' mod='kbgoogleshopping'}";
     var range_err = "{l s='Please enter valid number between 1 - 10.' mod='kbgoogleshopping'}";

@@ -35,6 +35,11 @@ require_once(_PS_MODULE_DIR_ . 'kbgoogleshopping/classes/KbGSProfiles.php');
 
 class AdminKbGSFeedManagementController extends ModuleAdminController
 {
+    /*
+    * PHP 8.2: declare shop_id to avoid dynamic property deprecation
+    * 01-08-2026
+    */
+    public $shop_id;
 
     //Class Constructor
     public function __construct()
